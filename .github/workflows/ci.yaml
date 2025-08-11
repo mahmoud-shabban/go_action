@@ -3,7 +3,7 @@ on:
   push:
     branchs:
       - 'main'
-    
+  workflow_dispatch:    
 jobs:
  test:
   runs-on: ubuntu-latest
@@ -12,5 +12,5 @@ jobs:
   - name: test my action
     uses: ./
     with:
-      message: "Hello From GH Actions workflow"
+      message: "Hello $GITHUB_REPOSITORY_OWNER From GH Actions workflow"
 
