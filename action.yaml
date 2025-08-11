@@ -1,0 +1,16 @@
+name: Go Greet Action
+author: Mahmoud Shaban
+description: Action to print greeat message via Golang
+inputs:
+  message:
+    description: 'Message You Want to Print'
+    required: false
+outputs:
+  greetMessage:
+    descriptoin: 'the message you used to greet'
+runs:
+  using: docker
+  image: Dockerfile
+  args:
+  - -message
+  - "${{ inputs.message }}"

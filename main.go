@@ -10,7 +10,7 @@ func printOutput(key, message string) {
 }
 
 func main() {
-	var msg = flag.String("message", "Hello From Go GithHub Action", "action -message <your message>")
+	var msg = flag.String("message", "Hello From Go Githhub Action", "action -message <your message>")
 
 	flag.Parse()
 
