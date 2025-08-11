@@ -1,0 +1,16 @@
+name: action release pipeline
+on:
+  push:
+    branchs:
+      - 'main'
+    
+jobs:
+ test:
+  runs=on: ubuntu-latest
+  steps:
+  - uses: actions/checkout@v2
+  - name: test my action
+    uses: .
+    with:
+      message: "Hello From GH Actions workflow"
+
