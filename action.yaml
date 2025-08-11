@@ -7,7 +7,7 @@ inputs:
     required: false
 outputs:
   greetMessage:
-    descriptoin: 'the message you used to greet'
+    description: 'the message you used to greet'
 runs:
   using: docker
   image: Dockerfile
