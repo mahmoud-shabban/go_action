@@ -10,7 +10,7 @@ jobs:
   steps:
   - uses: actions/checkout@v2
   - name: test my action
-    uses: .
+    uses: ./
     with:
       message: "Hello From GH Actions workflow"
 
